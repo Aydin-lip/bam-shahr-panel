@@ -18,10 +18,10 @@ const Login = () => {
       <div className="w-screen h-screen overflow-hidden bg-dark-them-active">
         <div className="w-full h-screen flex">
           <div className="relative h-full max-lg:hidden">
-            <div className="w-[35vw] brightness-[.8] h-screen bg-cover" style={{ backgroundImage: 'url(/images/bg-login.jpg)' }}></div>
+            <div className="w-[35vw] brightness-[.4] h-screen bg-cover" style={{ backgroundImage: 'url(/images/bg-login.jpg)' }}></div>
           </div>
-          <div className="w-full h-full flex justify-center items-center">
-            <div className="w-[40rem]">
+          <div className="w-full h-full max-sm:bg-dark-them flex justify-center items-center">
+            <div className="w-[40rem] bg-dark-them rounded-lg">
               <p className="text-dark-them p-4 text-lg">
                 <span className="block">Welcome back,</span>
                 <span>Please sign in to your account.</span>
