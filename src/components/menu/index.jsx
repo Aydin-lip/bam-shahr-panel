@@ -1,24 +1,13 @@
 import { useState } from "react"
 import { useNavigate } from "react-router"
 
-const Menu = () => {
-  const [open, setOpen] = useState(true)
+const Menu = ({open, setOpen}) => {
   const [value, setValue] = useState(0)
-  const [showUsers, setShowUsers] = useState(false)
-  const [showGame, setShowGame] = useState(false)
-  const [showSettings, setShowSettings] = useState(false)
   const navigate = useNavigate()
-
-
-  const openHandler = () => {
-    setOpen(!open)
-    setShowUsers(false)
-    setShowGame(false)
-  }
 
   return (
     <>
-      <div className={`min-w-[15rem] bg-dark-them text-dark-them overflow-auto transition-all ${!open ? 'ml-[-15rem] md:ml-[-12rem]' : ''} z-10 fixed md:relative top-0 left-0 bottom-0`}>
+      <div className={`min-w-[15rem] bg-dark-them text-dark-them overflow-auto transition-all duration-300 ${!open ? 'ml-[-15rem] md:ml-[-15rem]' : ''} z-[2] fixed md:relative top-0 left-0 bottom-0`}>
         <div className="p-8 text-center">
           <span className="text-4xl font-bold cursor-default text-indigo-600">LOGO</span>
         </div>

@@ -3,13 +3,14 @@ import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 
-const DropDown = ({children, items}) => {
+const DropDown = ({ children, items }) => {
 
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="hover:text-indigo-600 text-dark-them hover:bg-dark-them-active transition-all inline-flex w-full justify-center items-center gap-x-1.5 rounded-md text-sm font-semibold shadow-">
+        <Menu.Button className="hover:text-indigo-600 text-dark-them hover:bg-dark-them-active transition-all inline-flex w-full justify-center items-center rounded-md text-sm font-semibold shadow-">
           {children}
+          <ChevronDownIcon className={`ml-2 h-5 w-5 mr-2 transition-all`} />
         </Menu.Button>
       </div>
 
@@ -22,7 +23,7 @@ const DropDown = ({children, items}) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-dark-them shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="min-w-[7rem] absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-dark-them shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           {items}
         </Menu.Items>
       </Transition>
