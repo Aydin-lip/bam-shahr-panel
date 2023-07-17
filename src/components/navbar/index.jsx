@@ -44,9 +44,9 @@ const Navbar = ({ open, setOpen }) => {
 
   return (
     <>
-      <div className="bg-dark-them py-4 px-6 flex justify-between fixed lg:absolute top-0 right-0 left-0 z-[3]">
+      <div className="bg-dark-them py-4 px-2 sm:px-6 flex justify-between fixed lg:absolute top-0 right-0 left-0 z-[3]">
         <div className="flex">
-          <div className="flex justify-center items-center mr-4 lg:hidden">
+          <div className="flex justify-center items-center mr-2 sm:mr-4 lg:hidden">
             <span className="text-2xl font-extrabold text-indigo-600">LOGO</span>
           </div>
           <div className="cursor-pointer" onClick={() => setOpen(!open)}>
@@ -77,7 +77,7 @@ const Navbar = ({ open, setOpen }) => {
           </div>
         </div>
         <div>
-          <div className="flex gap-2">
+          <div className="flex gap-1 sm:gap-2">
             <DropDown items={() => ProfileDropdownItems()}>
               <div className="p-1 w-10 h-10 flex justify-center items-center bg-dark-them-active rounded-full">
                 <EnvelopeIcon className="w-6 h-6" />

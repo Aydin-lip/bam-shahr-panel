@@ -12,7 +12,8 @@ module.exports = {
         'dark-them-light': '#2a2d3a'
       },
       colors: {
-        'dark-them': '#6c7293'
+        'dark-them': '#6c7293',
+        'indigo-600': '#1976d2'
       },
     },
   },
