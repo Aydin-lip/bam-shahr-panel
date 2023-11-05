@@ -12,7 +12,9 @@ const Layout = () => {
         <Menu open={openMenu} setOpen={setOpenMenu} />
         <div className="p-4 w-full h-full relative">
           <Navbar open={openMenu} setOpen={setOpenMenu} />
-          <Outlet />
+          <div className="absolute top-[5.8rem] left-4 right-4 bottom-4">
+            <Outlet />
+          </div>
         </div>
       </div>
     </>

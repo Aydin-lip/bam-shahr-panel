@@ -2,14 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "diplomat";
+    src: local("Diplomat"),
+        url("./fonts/diplomat/Far_Diplomat.ttf") format("opentype");
+}
+
+* {
+    font-family: 'diplomat', sans-serif, "Rubik";
+    /* font-family: "Rubik", sans-serif; */
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f1015;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c7293;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5f6480;
+}
+
 body {
     background-color: #000;
 }
 
-* {
-    font-family: "Rubik", sans-serif;
-
-}
 
 .rtl {
     direction: rtl;
